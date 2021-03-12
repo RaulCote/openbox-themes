@@ -12,6 +12,6 @@ An almost complete theme. Openbox + GTK2/3 + Rofi.
 
 ![Light Black](./light-black.png)
 
-Openbox / GTK2/3 theme along a Rofi and Kitty Terminal Sonokai colorscheme.
+Openbox / GTK2/3 theme along a Rofi and Kitty Terminal Sonokai colorscheme, pretty much like High Minimal Contrast but the dark accent is different plus some GTK components are better managed (scrollbars, filechooser...)
 
 
