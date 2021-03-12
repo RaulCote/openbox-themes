@@ -1,0 +1,144 @@
+/**
+ * ROFI Color theme Sonokai Shusia
+ * User: Reaccion Raul
+ */
+
+* {
+	rofi-background-color: 		        #2D2A2E;
+	rofi-text-color: 		            #f9f9f9;
+	rofi-text-active-color:             #9ecd6f;
+    rofi-text-selected-color:           #F85E84; 
+    rofi-background-selected-color:     #2D2A2E;
+    rofi-background-active-color:       #2D2A2E;
+    rofi-border-color:                  #2D2A2E;
+    rofi-separator-color:               #f9f9f9;
+	
+    selected-normal-foreground:         rgba ( 225, 225, 225, 100 % );
+    font:            			        "Fira Code Medium 12";
+    foreground:                         @rofi-text-color;
+    normal-foreground:                  @rofi-text-color;
+    alternate-normal-background:        rgba ( 0, 0, 0, 100% );
+    red:                                rgba ( 220, 50, 47, 100 % );
+    selected-urgent-foreground:         rgba ( 248, 248, 242, 100 % );
+    blue:                               rgba ( 38, 139, 210, 100 % );
+    urgent-foreground:                  rgba ( 255, 255, 255, 100 % );
+    alternate-urgent-background:        rgba ( 0, 0, 0, 0 );
+    active-foreground:                  rgba ( 46, 197, 217, 100 % );
+    lightbg:                            rgba ( 238, 232, 213, 100 % );
+    selected-active-foreground:         rgba ( 127, 255, 242, 100 % );
+    alternate-active-background:        rgba ( 0, 0, 0, 0 );
+    background:                         rgba ( 0, 0, 0, 0 );
+    bordercolor:                        rgba ( 0, 0, 0, 0 );
+    alternate-normal-foreground:        @rofi-text-color;
+    normal-background:                  rgba ( 0, 0, 0, 100% );
+    lightfg:                            rgba ( 88, 104, 117, 100 % );
+    selected-normal-background:         rgba ( 0, 0, 0, 0 );
+    border-color:                       @rofi-border-color;
+    spacing:                            2;
+    separatorcolor:                     @rofi-separator-color;
+    urgent-background:                  rgba ( 0, 0, 0, 0 );
+    selected-urgent-background:         rgba ( 0, 0, 0, 0);
+    alternate-urgent-foreground:        @urgent-foreground;
+    background-color:                   rgba ( 0, 0, 0, 0 );
+    alternate-active-foreground:        @active-foreground;
+    active-background:                  rgba ( 0, 0, 0, 0 );
+    selected-active-background:         rgba ( 0, 0, 0, 0 );
+    real-background: 		 	        @rofi-background-color; 
+}
+#window {
+    background-color: @real-background;
+    border:           10;
+    padding:          0;
+    location: 	      center;
+    anchor: 	      center;
+    width: 85%;
+    height: 85%;
+}
+#mainbox {
+    border:  0;
+    padding: 80;
+}
+#message {
+    border:       0px 0px 0px ;
+    border-color: @separatorcolor;
+    padding:      0px ;
+}
+#textbox {
+    text-color: @foreground;
+
+}
+#listview {
+    fixed-height: 0;
+    border:       2px 0px 0px ;
+    border-color: @separatorcolor;
+    spacing:      3px ;
+    scrollbar:    true;
+    padding:      2px 0px 0px ;
+    dynamic: false;
+}
+#element {
+    border:  0;
+    padding: 6px ;
+}
+#element.normal.normal {
+    text-color:       @normal-foreground;
+}
+#element.normal.urgent {
+    text-color:       @urgent-foreground;
+}
+#element.normal.active {
+    text-color:       @rofi-text-active-color;
+    background-color: @rofi-background-active-color; 
+}
+#element.selected.normal {
+    text-color:       @rofi-text-selected-color;  
+    background-color: @rofi-background-selected-color;
+}
+#element.selected.urgent {
+    text-color:       @selected-urgent-foreground;
+}
+#element.selected.active {
+    text-color:       @rofi-text-active-color;   
+    background-color: @rofi-background-active-color;
+}
+#element.alternate.normal {
+    text-color:       @alternate-normal-foreground;
+}
+#element.alternate.urgent {
+    text-color:       @alternate-urgent-foreground;
+}
+#element.alternate.active {
+    text-color:       @alternate-active-foreground;
+}
+#scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-width: 8px ;
+    padding:      0;
+}
+#sidebar {
+    border:       2px 0px 0px ;
+    border-color: @separatorcolor;
+}
+#button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+#inputbar {
+    spacing:    5px ;
+    text-color: @normal-foreground;
+    padding:    1px ;
+
+}
+#case-indicator {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+#entry {
+    spacing:    0;
+   text-color: @normal-foreground;
+}
+#prompt {
+    spacing:    0;
+    text-color: @normal-foreground;
+}

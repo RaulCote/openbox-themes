@@ -7,3 +7,11 @@ Most of them include on their own folder a Rofi theme too as it's my favourite w
 ![High Minimal Contrast](./high-contrast-minimal.png)
 
 An almost complete theme. Openbox + GTK2/3 + Rofi.
+
+## Light Black
+
+![Light Black](./light-black.png)
+
+Openbox / GTK2/3 theme along a Rofi and Kitty Terminal Sonokai colorscheme.
+
+
